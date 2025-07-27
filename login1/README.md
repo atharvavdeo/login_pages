@@ -10,7 +10,7 @@ Each folder under the root contains a **standalone login UI**, complete with its
 
 | Page            | Live Preview Link |
 |-----------------|------------------|
-| Login Page 1    | [View Demo](https://atharvavdeo.github.io/login_pages/login_page_1) |
+| Login Page 1    | [View Demo](https://github.com/atharvavdeo/login_pages) |
 | Login Page 2    | _Coming soon_    |
 
 ## ✨ Features
