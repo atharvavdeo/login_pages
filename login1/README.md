@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Login Pages Repository
 
 This repository contains a growing collection of **custom-designed login and registration page templates**. Each page is built with clean HTML, CSS, and sometimes JavaScript or Bootstrap. These are perfect for practice, portfolio inclusion, or adapting into real-world projects.
