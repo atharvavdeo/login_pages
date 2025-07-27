@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Login Pages Repository
 
 This repository contains a growing collection of **custom-designed login and registration page templates**. Each page is built with clean HTML, CSS, and sometimes JavaScript or Bootstrap. These are perfect for practice, portfolio inclusion, or adapting into real-world projects.
@@ -52,3 +53,42 @@ Over time, this repository will include:
 - 📂 Organized project structure and documentation  
 
 ---
+=======
+# 🔑 Login Page 1
+
+A clean, responsive **Login & Register** page built using **HTML**, **CSS**, and **Material Symbols**.  
+This is the first template in the [Login Pages Collection](https://github.com/atharvavdeo/login_pages).
+
+---
+
+## 📸 Preview
+
+![Login Page 1 Screenshot](../assets/login_page1_preview.png) <!-- Optional: Replace with actual image path if added -->
+
+🔗 **[Live Demo](https://atharvavdeo.github.io/login_pages/login_page1/)**
+
+---
+
+## 🧩 Features
+
+- ✅ Dual form: **Login** and **Register**
+- 💅 Stylish UI with Material Icons
+- 🎯 Responsive layout
+- ✨ Smooth transitions and toggle between forms
+- 🧠 Focus effects & floating labels
+- ☑️ Checkbox for terms agreement
+- 🔐 Secure form structure with hidden password input
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5  
+- CSS3 (Custom properties + transitions)  
+- Google Fonts & Material Icons  
+- Bootstrap (Only CDN used for responsiveness)
+
+---
+
+## 📁 Folder Structure
+>>>>>>> 3cd67b2 (Update README)
