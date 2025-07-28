@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mario Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+    <div class="cloud cloud-5"></div>
+
+    <div class="coin coin-1"></div>
+    <div class="coin coin-2"></div> 
+    <div class="coin coin-3"></div>
+    <div class="coin coin-4"></div>
+    <div class="coin coin-5"></div> 
+    <div class="login-box" id="loginBox">
+      <div class="top-circle">❓</div>
+      <h1>PLAYER LOGIN</h1>
+
+      <input type="email" placeholder="Email Address" id="loginEmail" />
+      <input type="password" placeholder="Password" id="loginPassword" />
+
+      <button class="login" id="loginBtn"><span></span> LOGIN</button>
+      <button class="register" id="showRegisterBtn"><span></span> NEW PLAYER? REGISTER</button>
+      <button class="guest" id="guestBtn"><span></span> CONTINUE AS GUEST</button>
+
+      <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot green"></span>
+        <span class="dot blue"></span>
+      </div>
+    </div>
+
+    <div class="register-box" id="registerBox">
+      <div class="top-circle">📝</div>
+      <h1>REGISTER</h1>
+      <input type="text" placeholder="Username" id="regUsername" />
+      <input type="email" placeholder="Email" id="regEmail" />
+      <input type="password" placeholder="Password" id="regPassword" />
+      <button class="register-submit" id="registerSubmitBtn"><span></span> CREATE PLAYER</button>
+      <button class="back-to-login" id="backToLoginBtn">⬅ BACK TO LOGIN</button>
+    </div>
+
+    <div class="footer"> Ready to start your adventure? </div>
+  </div>
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const loginBox = document.getElementById("loginBox");
+        const registerBox = document.getElementById("registerBox");
+        const showRegisterBtn = document.getElementById("showRegisterBtn");
+        const backToLoginBtn = document.getElementById("backToLoginBtn");
+        const loginBtn = document.getElementById("loginBtn");
+        const guestBtn = document.getElementById("guestBtn");
+        const registerSubmitBtn = document.getElementById("registerSubmitBtn");
+
+        showRegisterBtn.addEventListener("click", () => {
+            loginBox.classList.add("hide");
+            setTimeout(() => {
+                loginBox.style.display = "none";
+                registerBox.style.display = "block";
+                setTimeout(() => {
+                    registerBox.classList.add("show");
+                }, 10);
+            }, 300);
+        });
+
+        backToLoginBtn.addEventListener("click", () => {
+            registerBox.classList.remove("show");
+            setTimeout(() => {
+                registerBox.style.display = "none";
+                loginBox.style.display = "block";
+                setTimeout(() => {
+                    loginBox.classList.remove("hide");
+                }, 10);
+            }, 300);
+        });
+
+        // Handle login
+        loginBtn.addEventListener("click", () => {
+            const email = document.getElementById("loginEmail").value;
+            const password = document.getElementById("loginPassword").value;
+            
+            if (!email || !password) {
+                alert(" Please enter both email and password!");
+                return;
+            }
+            
+            loginBtn.innerHTML = "<span></span> LOGGING IN...";
+            setTimeout(() => {
+                alert(" Welcome back, Player! Login successful!");
+                loginBtn.innerHTML = "<span>🍄</span> LOGIN";
+            }, 1500);
+        });
+
+        guestBtn.addEventListener("click", () => {
+            alert("Welcome, Guest Player! Starting your adventure...");
+        });
+
+        registerSubmitBtn.addEventListener("click", () => {
+            const username = document.getElementById("regUsername").value;
+            const email = document.getElementById("regEmail").value;
+            const password = document.getElementById("regPassword").value;
+            
+            if (!username || !email || !password) {
+                alert("📝 Please fill in all fields!");
+                return;
+            }
+            
+            registerSubmitBtn.innerHTML = "<span></span> CREATING PLAYER...";
+            setTimeout(() => {
+                alert("🌟= Registration successful! Welcome to the game, " + username + "!");
+                registerSubmitBtn.innerHTML = "<span></span> CREATE PLAYER";
+                
+               
+                setTimeout(() => {
+                    backToLoginBtn.click();
+                }, 1000);
+            }, 1500);
+        });
+    });
+  </script>
+</body>
+</html>
