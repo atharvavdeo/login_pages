@@ -12,42 +12,24 @@ Each folder under the root contains a **standalone login UI**, complete with its
 - Multiple form states (e.g., login vs register)
 - Modular file organization
 
-## 🔗 Live Previews
 
-| Page            | Live Preview Link |
-|-----------------|------------------|
-| Login Page 1    | [View Demo](https://atharvavdeo.github.io/login_pages/login_page_1) |
-| Login Page 2    | _Coming soon_    |
-
-
-## 🚀 How to Use
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/atharvavdeo/login_pages.git
-   cd login_page
-2. Navigate into any login page folder:
-   ```bash
-    cd login_page_1
-4. Open the index.html file in your browser.
-
- ## ✨ Planned Features & Additions
+ ##  Planned Features & Additions
 
 Over time, this repository will include:
 
-- 🔐 **Multiple login/register templates** with modern UI trends  
-- 📱 **Fully responsive layouts** for all screen sizes  
-- 🌙 **Dark mode variants**  
-- 🎨 **Themed UI templates** – minimalist, professional, futuristic, etc.  
-- 🧠 **JS-enhanced features** like:
+-  **Multiple login/register templates** with modern UI trends  
+-  **Fully responsive layouts** for all screen sizes  
+-  **Dark mode variants**  
+-  **Themed UI templates** – minimalist, professional, futuristic, etc.  
+-  **JS-enhanced features** like:
   - Show/hide password
   - Real-time form validation
   - Animated transitions
-- 🪄 **Micro-interactions & animations** (pure CSS or JS libraries)  
-- ⚙️ **Templates using CSS frameworks** like Bootstrap, TailwindCSS, etc.  
-- 🔧 **Backend-ready versions** for plug-and-play login systems  
-- 🌍 **Multilingual support for UI**  
-- 📂 Organized project structure and documentation  
+-  **Micro-interactions & animations** (pure CSS or JS libraries)  
+- ⚙ **Templates using CSS frameworks** like Bootstrap, TailwindCSS, etc.  
+-  **Backend-ready versions** for plug-and-play login systems  
+-  **Multilingual support for UI**  
+-  Organized project structure and documentation  
 
 ---
 
